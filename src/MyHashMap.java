@@ -109,11 +109,11 @@ public class MyHashMap<K,V> {
         }
     }
 
-    private int getCapacity() {
+    public int getCapacity() {
         return hashTable.length;
     }
 
-    private int size() {
+    public int size() {
         int count = 0;
         for(int i = 0; i < hashTable.length; i++){
             Entry node = hashTable[i];
